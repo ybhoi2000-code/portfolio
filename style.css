@@ -112,8 +112,7 @@ body {
   .skills-grid { grid-template-columns: 1fr; }
   .nav-links { display:none; position: absolute; right:14px; top:64px; background:rgba(2,6,12,0.98); padding:10px; border-radius:8px; flex-direction:column; gap:10px; }
   .nav-toggle { display:block; color:#fff; }
-  .nav-links.mobile-open { display:flex; }
-}
+  .nav-links.mobile-open  { display:flex 1 1 100% ; max-width: 100% }
 /* ---------- CERTIFICATIONS ---------- */
 .certifications {
   text-align: left;
@@ -159,4 +158,5 @@ body {
   font-weight: 500;
   color: #e6eef8;
 }
+
 

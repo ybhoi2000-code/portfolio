@@ -108,67 +108,37 @@ body {
 
 /* responsive */
 @media (max-width: 900px) {
-  .about-grid { 
-    grid-template-columns: 1fr; 
-    text-align: center; 
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    background: rgba(20, 20, 20, 0.95);
+    padding: 15px;
+    border-radius: 8px;
   }
 
-  .skills-grid { 
-    grid-template-columns: 1fr; 
+  .nav-links.mobile-open {
+    display: flex;
   }
 
-  .nav-links { 
-    display: none; 
-    position: absolute; 
-    right: 14px; 
-    top: 64px; 
-    background: rgba(2,6,12,0.98); 
-    padding: 10px; 
-    border-radius: 8px; 
-    flex-direction: column; 
-    gap: 10px; 
-    width: 100%;              /* ✅ full width dropdown */
-    max-width: 300px;         /* ✅ optional limit */
+  .nav-toggle {
+    display: block;
+    color: #fff;
   }
 
-  .nav-toggle { 
-    display: block; 
-    color: #fff; 
+  .hero h1 {
+    font-size: 2rem;
   }
 
-  .nav-links.mobile-open { 
-    display: flex;            /* ✅ valid flex display */
-    flex: 1 1 100%;           /* ✅ flex shorthand */
-    max-width: 100%;          /* ✅ prevents overflow */
-  }
-}
-.highlights {
-  display: flex;
-  flex-wrap: wrap;        /* ✅ allow wrapping */
-  justify-content: center;/* ✅ center content */
-  gap: 18px;
-  max-width: 100%;        /* ✅ prevent overflow */
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  box-sizing: border-box;
-}
-
-.highlight-card {
-  flex: 1 1 280px;        /* ✅ flexible min size */
-  max-width: 320px;       /* ✅ stops cards from being too wide */
-  background: rgba(255, 255, 255, 0.05);
-  padding: 18px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-}
-@media (max-width: 900px) {
   .highlights {
-    flex-direction: column;   /* ✅ stack vertically */
+    flex-direction: column;
     align-items: center;
   }
+
   .highlight-card {
-    width: 100%;              /* ✅ full width */
+    width: 100%;
     max-width: 100%;
   }
 }
@@ -220,6 +190,7 @@ body {
   font-weight: 500;
   color: #e6eef8;
 }
+
 
 
 
